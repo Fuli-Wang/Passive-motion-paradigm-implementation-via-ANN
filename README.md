@@ -15,6 +15,6 @@ The "IndhRobot_example.txt" and "OutdhRobot_example.txt" show the format of the 
 The rows in both files should correspond to each other, where the joint angles correspond to their end positions.
 
 
-Once the training is done, the model will be saved. To transfer or fine-tune the model via (make sure the data and model loaded correctly):
+Once the training is done, the model will be saved. To transfer or fine-tune the model via transfer learning (make sure the data and model loaded correctly):
 
     python3 transfertrain.py
