@@ -51,7 +51,7 @@ class EpochLogger(tf.keras.callbacks.Callback):
         if (epoch + 1) % self.print_every == 0:
             print(f"Epoch {epoch + 1}: loss = {logs['loss']}, val_loss = {logs['val_loss']}")
 
-num_data = 500000
+num_data = 500000 #adjust it based on your data size
 x = load_data('IndhRobot_ur5.txt', num_data, 6) #each row is a data
 y = load_data('OutdhRobot_ur5.txt', num_data, 3)
 
