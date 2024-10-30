@@ -52,14 +52,6 @@ class PMP(tf.keras.Model):
             outputs = self.call(inputs)
         return tape.batch_jacobian(outputs, inputs)
 
-def relu(x):
-	return max(0.0, x)
-
-def relu_der(x):
-    if x>=0:
-        return 1.0
-    else:
-        return 0.0
 #put the Initial position of the arm
 def InitializeJan():
     Jan = np.zeros(6)
