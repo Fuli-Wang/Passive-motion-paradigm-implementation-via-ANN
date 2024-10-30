@@ -1,6 +1,6 @@
 # ANN-based-approximate-kinematic-transformations
 
-The "pmptrain.py" file is using ANN to fit the relationship between joint angles and end positions, evaluating of the Jacobian matrix via  tf.GradientTape API.
+The "pmptrain.py" file uses ANN to fit the relationship between joint angles and end positions, evaluating the Jacobian matrix via the TF GradientTape API.
 
 
 The "pmptrain_chain_rule.py" file is an example using the chain-rule to calculate the Jacobian matrix (Not recommanded for networks with a high number of layers and nerves).
@@ -18,3 +18,8 @@ The rows in both files should correspond to each other, where the joint angles c
 Once the training is done, the model will be saved. To transfer or fine-tune the model via transfer learning (make sure the data and model loaded correctly):
 
     python3 transfertrain.py
+
+# Passive motion paradigm implementation via deep neural networks
+We also provide a Python version of the Passive Motion Paradigm (PMP) motion model, which uses the deep neural networks-based PMP to realize the goal-directed motion:
+
+    python3 pmp_c.py
