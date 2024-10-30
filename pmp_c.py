@@ -301,7 +301,7 @@ def VTGS(XT1, YT2, ZT3, XO1, YO2, ZO3, ChoiceAct, MentalSim, WristGraspPose, mod
         ang6=konst*Jan[5]
         print("\n Joint Angles: ",ang1,ang2,ang3,ang4,ang5,ang6)
         print("\n\n FINAL SOLUTION: ",X_pos[0],X_pos[1],X_pos[2])
-        np.savetxt('results.txt', results, fmt='%f')
+        np.savetxt('results.txt', results, fmt='%f') #The file records the whole motion (Joint angles' change and end-effector's trajectory)
         #time.sleep(1)
 
 def TargGenSMo(model):
