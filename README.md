@@ -3,7 +3,7 @@
 The "pmptrain.py" file uses ANN to fit the relationship between joint angles and end positions, evaluating the Jacobian matrix via the TF GradientTape API.
 
 
-The "pmptrain_chain_rule.py" file is an example using the chain-rule to calculate the Jacobian matrix (Not recommanded for networks with a high number of layers and nerves).
+The "pmptrain_chain_rule.py" file is an example using the chain rule to calculate the Jacobian matrix (Not recommended for networks with a high number of layers and nerves).
 
 
 The "IndhRobot_example.txt" and "OutdhRobot_example.txt" show the format of the training data：
@@ -22,4 +22,8 @@ Once the training is done, the model will be saved. To transfer or fine-tune the
 # Passive motion paradigm implementation via deep neural networks
 We also provide a Python version of the Passive Motion Paradigm (PMP) motion model, which uses the deep neural networks-based PMP to realize the goal-directed motion:
 
-    python3 pmp_c.py
+    python3 pmp_ANN.py
+
+Besides, the non-ANN PMP is also available:
+
+    python3 pmp_non_ANN.py
