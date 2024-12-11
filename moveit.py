@@ -46,7 +46,6 @@ def moveit_joint_angle_calculator():
 
     # Replace these values with the initial joint states from PMP
     initial_joint_values = [np.radians(94.68), np.radians(-86.32), np.radians(-142.83), np.radians(-133.48), np.radians(-84.74), np.radians(86.31)]  # Example joint angles
-    #initial_joint_values = [np.radians(97.68), np.radians(-109.17), np.radians(-96.19), np.radians(30.76), np.radians(78.11), np.radians(86.31)]  # Example joint angles
     set_initial_state(move_group, initial_joint_values)
 
     # Define the target pose for the end effector
