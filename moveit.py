@@ -63,7 +63,7 @@ def moveit_joint_angle_calculator():
     joint_constraint.position = np.radians(45)  # Fix Joint
     joint_constraint.tolerance_above = np.radians(15.0)
     joint_constraint.tolerance_below = np.radians(15.0)
-    joint_constraint.weight = 10.0
+    joint_constraint.weight = 1.0
     constraints.joint_constraints.append(joint_constraint)
 
     joint_constraint2 = JointConstraint()
@@ -71,7 +71,7 @@ def moveit_joint_angle_calculator():
     joint_constraint2.position = np.radians(90)  # Fix Joint
     joint_constraint2.tolerance_above = np.radians(15.0)
     joint_constraint2.tolerance_below = np.radians(15.0)
-    joint_constraint2.weight = 10.0
+    joint_constraint2.weight = 1.0
     constraints.joint_constraints.append(joint_constraint2)
 
     #move_group.set_path_constraints(constraints) #uncomment to add constraints
