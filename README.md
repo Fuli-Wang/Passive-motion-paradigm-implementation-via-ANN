@@ -3,7 +3,7 @@
 The "pmptrain.py" file uses ANN to fit the relationship between joint angles and end positions, evaluating the Jacobian matrix via the TF GradientTape API.
 
 
-The "pmptrain_chain_rule.py" file is an example using the chain rule to calculate the Jacobian matrix (Not recommended for networks with a high number of layers and nerves).
+The "pmptrain_chain_rule.py" file is an example of using the chain rule to calculate the Jacobian matrix (Not recommended for networks with a high number of layers and nerves).
 
 
 The "IndhRobot_example.txt" and "OutdhRobot_example.txt" show the format of the training data：
@@ -14,6 +14,9 @@ The "IndhRobot_example.txt" and "OutdhRobot_example.txt" show the format of the 
 
 The rows in both files should correspond to each other, where the joint angles correspond to their end positions.
 
+To train an ANN model using the data:
+
+    python3 pmptrain.py
 
 Once the training is done, the model will be saved. To transfer or fine-tune the model via transfer learning (make sure the data and model loaded correctly):
 
