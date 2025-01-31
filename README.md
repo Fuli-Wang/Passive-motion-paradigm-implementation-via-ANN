@@ -18,6 +18,8 @@ To train an ANN model using the data:
 
     python3 pmptrain.py
 
+There is another training file based on PyTorch (pmptrain_pytorch.py). The PyTorch-based PMP calculation process appears to be more efficient (it has not been fully verified). If you wish to use the PyTorch-based PMP, please use the pmptrain_pytorch.py file to train the model and update the pmp_ANN.py file accordingly to adapt the PyTorch. 
+
 Once the training is done, the model will be saved. To transfer or fine-tune the model via transfer learning (make sure the data and model loaded correctly):
 
     python3 transfertrain.py
