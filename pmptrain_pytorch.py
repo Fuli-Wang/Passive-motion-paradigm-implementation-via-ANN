@@ -13,7 +13,7 @@ class PMP(nn.Module):
         self.dense2 = nn.Linear(units_layer1, units_layer2)
         self.dense3 = nn.Linear(units_layer2, units_layer3)
         self.dense4 = nn.Linear(units_layer3, units_layer4)
-        self.dense5 = nn.Linear(units_layer4, 6)
+        self.dense5 = nn.Linear(units_layer4, 3)
 
     def forward(self, x):
         x = F.silu(self.dense1(x))
@@ -54,8 +54,8 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Load data
 num_data = 500000
-x = load_data('platform_poses.txt', num_data, 6)
-y = load_data('actuator_lengths.txt', num_data, 6)
+x = load_data('IndhRobot_ur5.txt', num_data, 6)
+y = load_data('OutdhRobot_ur5.txt', num_data, 3)
 
 # Split data into training and validation sets
 x_train, x_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_state=42)
