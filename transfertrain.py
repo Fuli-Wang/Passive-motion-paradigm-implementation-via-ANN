@@ -86,7 +86,7 @@ def freeze_layers(model, num_layers):
     model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=lr_schedule), loss='mean_squared_error')
 
 # Initialize variables
-best_val_loss = np.Inf
+best_val_loss = np.inf
 patience = 100
 wait = 0
 layers_to_freeze = 0
