@@ -38,6 +38,7 @@ If you find this work useful, please cite our paper:
 
 @article{Wang_Mohan_Tiwari_2025, 
 title={Passive motion paradigm implementation via deep neural networks: analysis and verification}, 
+
 DOI={10.1017/S0263574725000505}, 
 journal={Robotica}, 
 author={Wang, Fuli and Mohan, Vishwanathan and Tiwari, Ashutosh}, 
