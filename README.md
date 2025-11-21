@@ -1,4 +1,4 @@
-# We observed that changing the Jacobian source (e.g., from an ANN-based estimate to a numerically computed Jacobian) while keeping all other parameters nominally “unchanged” can alter the effective closed-loop gain and lead to different behaviours. Now, we are currently redeveloping the entire framework, explicitly formalising and standardising the entire control law. The new implementation will be available as soon as possible.
+We observed that changing the Jacobian source (e.g., from an ANN-based estimate to a numerically computed Jacobian) while keeping all other parameters nominally “unchanged” can alter the effective closed-loop gain and lead to different behaviours. Now, we are currently redeveloping the entire framework, explicitly formalising and standardising the entire control law. The new implementation will be available as soon as possible.
 
 # ANN-based-approximate-kinematic-transformations
 
